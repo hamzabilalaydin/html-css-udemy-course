@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Challenge</title>
+
+    <style>
+      /*
+        SPACING SYSTEM (px)
+        2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+        FONT SIZE SYSTEM (px)
+        10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+        */
+
+      /* MAIN COLOR: #087f5b
+        GREY COLOR: #343a40 */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+
+      body {
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        color: #343a40;
+        line-height: 1;
+        width: 800px;
+        margin: 300px auto;
+        gap: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .btn {
+        display: block;
+        width: 36px;
+        height: 36px;
+        border: 1px solid #087f5b;
+        border-radius: 50%;
+        background-color: #fff;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      .btn-icon {
+        stroke: #087f5b;
+        width: 18px;
+        height: 18px;
+        stroke-width: 2px;
+      }
+
+      .btn-left {
+        padding-right: 2px;
+      }
+
+      .btn-right {
+        padding-left: 2px;
+      }
+
+      .btn:hover .btn-icon {
+        stroke: #fff;
+      }
+
+      .links {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      span {
+        display: block;
+        text-align: start;
+      }
+
+      a {
+        color: #353535;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding-top: 6.5px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      .third {
+        background-color: #087f5b;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn btn-left">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M15.75 19.5L8.25 12l7.5-7.5"
+        />
+      </svg>
+    </button>
+    <div class="links">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a class="third" href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span href="#">...</span>
+      <a href="#">23</a>
+    </div>
+    <button class="btn btn-right">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="btn-icon"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M8.25 4.5l7.5 7.5-7.5 7.5"
+        />
+      </svg>
+    </button>
+  </body>
+</html>
